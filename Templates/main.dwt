@@ -156,7 +156,7 @@
 
 <footer id="footer" class="">
 
-	<section class="upprfootr">
+	<section class="upprfootr sectionbx">
     	<div class="container">
         	<div class="row">
             	<div class="col-md-12">
@@ -165,18 +165,6 @@
                 </div>
             </div>
        </div>
-    </section>
-    
-    <section class="lowerftr">
-    	<div class="container">
-        	<div class="row">
-            	<div class="col-md-12">
-                	<p><a href="#">Terms and Conditions</a> | <a href="#">Privacy Policy</a> | <a href="../disclaimer.html">Disclaimer</a></p>
-                    <p>Copyright © 2026 Lilkis Private Limited. All rights reserved.</p>
-                	<div class="clearfix"></div>
-                </div>
-            </div>
-        </div>
     </section>
     
 </footer>
