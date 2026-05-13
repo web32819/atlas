@@ -64,7 +64,7 @@ a:focus, a:hover {
     border-radius: 0;
     background:transparent;
     width: 100%;
-    padding:0 0;
+    padding:25px 0;
     height: auto;
     position: fixed;
     z-index: 16;
@@ -124,26 +124,16 @@ a:focus, a:hover {
     line-height: 20px;
 }
 #myNavbar ul li ul.dropdown-menu li a:hover{color:#7CA0D9;}
-#myNavbar ul{padding-inline-start:0; float:right; display:table; margin:0 auto; position:relative;}
-#myNavbar ul li{padding:0 15px;}
-#myNavbar ul li a{transition: all 0.3s ease; padding:0; color:#FFF; font-weight:500; position:relative; line-height:70px; text-transform:uppercase;}
+#myNavbar ul{padding-inline-start:0; float:right; display:table; margin:20px auto; position:relative;}
+#myNavbar ul li{padding:0 20px;}
+#myNavbar ul li.cntxt{
+	border:1px solid #FFF;
+	border-radius:15px;
+	padding:0 40px;
+}
+#myNavbar ul li a{transition: all 0.3s ease; padding:0; color:#FFF; font-weight:500; position:relative; line-height:50px; text-transform:uppercase;}
 #myNavbar ul li a:hover{transform: translateY(-2px); color:#C39E4B; font-weight:500;}
-#myNavbar ul li a:hover:after{
-	content: '';
-	position:absolute;
-	background:#6DAA43;
-	width:100%;
-	height:4px;
-	display: flex;
-    text-align: center;
-    left: 0%;
-    bottom: -6px;
-}
-.nav.navbar-nav li.active a {
-    color: #FFF !important;                         
-    border-bottom: 4px solid #6DAA43;
-	background-color:transparent ;
-}
+.nav.navbar-nav li.active a {color: #FFF !important; background-color:transparent;}
 .nav.navbar-nav li.active a:hover{background-color:transparent;}
 .nav.navbar-nav li.active a:focus{background-color:transparent;}
 .navbar-nav>li>.dropdown-menu{margin-top:0 !important;}
@@ -414,7 +404,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
     width: 100%;
     left: 0;
     top: 0;
-    padding:10px 0 0;
+    padding:20px 0;
 	height: auto;
 	background:rgba(255,255,255,.10);
 	z-index:16;
@@ -439,7 +429,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
     z-index: 1;
 }
 .bannrTxtbox h1{color:#FFF; text-align:left; line-height:85px;}
-.bannrTxtbox p{font-weight:400; color:#FFF;}
+.bannrTxtbox p{font-weight:400; color:#FFF; font-size:20px; line-height:36px;}
 /*MEDIA QUERY CSS STARTS HERE*/
 @media only screen and (orientation:portrait){}
 @media screen and (max-width:1440px){}

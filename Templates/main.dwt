@@ -63,7 +63,7 @@
                                     <a href="../index.html" class="nav-link hvr-fade">Our Experiences</a>
                                 </li>
                                 <li class=""><a href="../key-people.html" class="">Philosophy</a></li>
-                                <li class=""><a href="../contact.html" class="hvr-fade">Contact</a></li>
+                                <li class="cntxt"><a href="../contact.html" class="hvr-fade">Contact</a></li>
                             </ul>
                     	</div>
                     	<div class="cleafix"></div>
