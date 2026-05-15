@@ -126,7 +126,7 @@ a:focus, a:hover {
 }
 #myNavbar ul li ul.dropdown-menu li a:hover{color:#7CA0D9;}
 #myNavbar ul{padding-inline-start:0; float:right; display:table; margin:20px auto; position:relative;}
-#myNavbar ul li{padding:0 20px;}
+#myNavbar ul li{padding:0 30px;}
 #myNavbar ul li.cntxt{
 	border:1px solid #FFF;
 	border-radius:15px;
@@ -387,14 +387,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 	padding:15px;
 	display: inline-table;
 }
-.imgradius{
-	-webkit-border-top-right-radius: 50px;
-	-webkit-border-bottom-left-radius: 50px;
-	-moz-border-radius-topright: 50px;
-	-moz-border-radius-bottomleft: 50px;
-	border-top-right-radius: 50px;
-	border-bottom-left-radius: 50px;
-}
+.imgradius{border-radius:20px;}
 .sectionbx{padding:80px 0;}
 #myNavbar{padding:0 0;}
 .scrolled {
@@ -684,9 +677,197 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 }
 .bxsctn{
 	display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
+    grid-template-columns:3fr 2fr;
+    gap: 35px;
 }
+.bxsctnwrpr h4{
+	font-size:24px;
+	text-align:left;
+	font-family: "Manrope", sans-serif;
+	color:#4D4D4D;
+	line-height:34px;
+}
+.bxsctnwrpr p{color:#4D4D4D;}
+
+/* Tabs */
+.itinerary-tabs {
+    display: flex;
+    align-items: center;
+    background: #6F6F6F;
+    border-radius: 20px;
+    padding:20px;
+    gap:15px;
+	margin:50px 0;
+}
+.itin-tab {
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    gap:20px;
+    padding: 12px 20px;
+    border: none;
+    background: transparent;
+    border-radius:10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: "Manrope", sans-serif;
+}
+.itin-tab .day-num {
+    font-size:20px;
+    font-weight:600;
+    color: #FFF;
+    transition: color 0.3s ease;
+}
+.itin-tab .day-date {
+    font-size: 15px;
+	font-weight:500;
+    color: #D9D9D9;
+    transition: color 0.3s ease;
+}
+.itin-tab.active {background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.08);}
+.itin-tab.active .day-num {color: #2B200B; font-size:20px; font-weight:600;}
+.itin-tab.active .day-date {color: #707070; font-size:15px; font-weight:500;}
+.itin-tab:hover:not(.active) .day-num {color: #FFF;}
+/* Body */
+.itinerary-body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+/* Row */
+.itin-row {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+/* Timeline */
+.itin-timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50px;
+    flex-shrink: 0;
+    padding-top: 0;
+}
+.timeline-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #FFF;
+    border: 1px solid #D9D9D9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.timeline-icon svg{}
+.timeline-date {
+    font-size: 14px;
+    color: #000;
+	font-weight:400;
+    margin-top: 6px;
+	font-family: "Manrope", sans-serif;
+    text-align: center;
+}
+.timeline-line {
+    width: 1px;
+    flex: 1;
+    min-height: 40px;
+    background: #ddd;
+    margin-top: 8px;
+}
+/* Accordion */
+.itin-accordion {
+    flex: 1;
+    background: #FCFAF4;
+    border: 1px solid #e8e0d5;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.accordion-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 22px 28px;
+    cursor: pointer;
+    user-select: none;
+}
+.accordion-header h3 {
+    font-size: 24px;
+    font-weight: 400;
+    color: #2B200B;
+    margin: 0;
+	text-align:left;
+}
+.chevron {flex-shrink: 0; transition: transform 0.35s ease;}
+/* Accordion Body */
+.accordion-body {
+    display: grid;
+    grid-template-rows: 0fr;
+    overflow: hidden;
+    transition: grid-template-rows 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+	padding: 0 28px; /* add horizontal padding */
+}
+.accordion-body > div {overflow: hidden;}
+.itin-accordion.open .accordion-header{background:#FFF;}
+.itin-accordion.open .accordion-body { grid-template-rows: 1fr; padding: 20px 28px 40px; background:#FFF;/* padding when open */}
+.itin-accordion.open .chevron {transform: rotate(180deg);}
+.accordion-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+/* List */
+.itin-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.itin-list li {
+    display: flex;
+    align-items: flex-start;
+    gap:20px;
+    font-size: 16px;
+    color: #4D4D4D;
+    line-height:24px;
+}
+.itin-list li svg {flex-shrink: 0; margin-top:3px;}
+/* Image */
+.accordion-img {border-radius:20px; overflow: hidden;}
+.accordion-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px;
+}
+.incldsctn{
+	background: #C39E4B;
+	background: linear-gradient(180deg, rgba(195, 158, 75, 1) 0%, rgba(157, 127, 82, 1) 100%);
+}
+.incldsctn h1{
+	position:relative;
+	font-family: "Manrope", sans-serif;
+	color:#FFF;
+	font-size:24px;
+	font-weight:600;
+	padding:0 25px;
+}
+.incldcrd{
+	margin-top: 90px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    align-items: stretch;
+}
+.incldcrdbx{
+	display: flex;
+    align-items: flex-start;
+    gap:25px;
+}
+.incldcrdbx img{flex-shrink: 0;}
 /*MEDIA QUERY CSS STARTS HERE*/
 @media only screen and (orientation:portrait){}
 @media screen and (max-width:1440px){}
