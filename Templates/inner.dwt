@@ -42,15 +42,15 @@
 <!-- TemplateBeginEditable name="EditRegion7" -->
 
 <!-- TemplateEndEditable -->
-<nav class="navbar navbar-inverse visible-lg" id="">
+<nav class="navbar innrnavbar navbar-inverse visible-lg" id="">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                 	
                     <div class="col-md-3 no-pad">
                     	<div class="sitelogo">
-                            <a class="navbar-brand" href="../index.html" id="" aria-label="Lilkis Home">
-                          	  <img src="images/logo.svg" class="img-responsive" alt=""/>
+                            <a class="navbar-brand" href="../index.html" id="" aria-label="Atlas Home">
+                          	  <img src="images/inner-logo.svg" class="img-responsive" alt=""/>
                             </a>
                        </div>
                     </div>
@@ -233,7 +233,7 @@ function closeNav() {
 
 <script type="text/javascript">
 $(function() {
-    var header = $(".navbar");
+    var header = $(".innrnavbar");
     $(window).scroll(function() {    
         var scroll = $(window).scrollTop();
         if (scroll >= 10) {
