@@ -47,7 +47,7 @@
             <div class="row">
                 <div class="col-md-12">
                 	
-                    <div class="col-md-3 no-pad">
+                    <div class="col-md-2 no-pad">
                     	<div class="sitelogo">
                             <a class="navbar-brand" href="../index.html" id="" aria-label="Lilkis Home">
                           	  <img src="images/logo.svg" class="img-responsive" alt=""/>
@@ -55,7 +55,7 @@
                        </div>
                     </div>
                 	
-                    <div class="col-md-9 no-pad">
+                    <div class="col-md-10 no-pad">
                     	
                         <div class="collapse navbar-collapse no-pad" id="myNavbar">
                             <ul class="nav navbar-nav text-center">
@@ -160,7 +160,7 @@
     	<div class="container">
         	<div class="row">
             	<div class="col-md-12">
-						<p><a href=""#>FAQ</a>  •  <a href="#">Privacy Policy</a>  •  <a href="#">Terms & Conditions</a></p>
+						<p><a href="#">FAQ</a>  •  <a href="#">Privacy Policy</a>  •  <a href="#">Terms & Conditions</a></p>
                         <ul>
                         	<li>
                             	<a href="#" target="_blank">
