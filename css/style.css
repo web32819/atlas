@@ -222,7 +222,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 	width:100%; 
 	top:0;
 }
-.mobile-header.scrolled{background:#FFF;}
+.mobile-header.scrolled{background:#FFF; padding-bottom:15px;}
 .sidebar {
 	height: 100%;
 	width: 0;
@@ -355,6 +355,11 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 .sidebar .sclbox ul li svg{height:25px; fill:#c39a58;}
 .sidebar .sclbox h4{color:#2B200B; font-size:22px;}
 /* NEW CSS STARTS HERE */
+/* Logo transition */
+.nav-logo {
+    transition: opacity 0.3s ease;
+    height: 50px;
+}
 .viewtxt{
 	margin: 50px auto 0;
 	display:table;
@@ -384,7 +389,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 	background:rgba(255,255,255,.99);
 	z-index:16;
 }
-.scrolled #myNavbar ul{border-bottom:none;}
+.scrolled #myNavbar ul{border-bottom:none; margin: 0 auto 25px;}
 .scrolled #myNavbar ul li a{color:#C39E4B;}
 .scrolled #myNavbar ul li.cntxt{border:1px solid #C39E4B;}
 .bannersctn{
@@ -400,7 +405,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 }
 .bannrTxtbox{
 	position: absolute;
-    top: 290px;
+    top: 200px;
     width: 100%;
     left:10px;
     z-index: 1;
@@ -456,7 +461,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 	font-weight:600;
 	font-family: "Manrope", sans-serif;
 }
-.exprncsctn h1{ font-size:45px; color:#2B200B;}
+.exprncsctn h1{font-size:45px; color:#2B200B;}
 .servicegrid{
 	margin-top:50px;
 	display: grid;
@@ -569,7 +574,10 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
     background: #e0e0e0;
 }
 .waysctn{background:#FFF;}
-.waysctn p{color:#4D4D4D; text-align:center;}
+.waysctn p{
+	color:#4D4D4D; 
+	text-align:center;
+}
 .waybx{
 	margin-top:60px;
 	display: grid;
@@ -612,7 +620,8 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
     border-radius: 100%;
     padding: 8px;
 }
-.scrolled.innrnavbar{background: rgba(255, 255, 255, .99); padding:0;}
+.scrolled.innrnavbar{background: rgba(255, 255, 255, .99); padding:10px 0;}
+.scrolled.innrnavbar 
 .scrolled.innrnavbar .navbar-brand{margin-top:14px;}
 .innrnavbar{background:#FFF; padding: 10px 0;}
 .innrnavbar #myNavbar ul li a{color:#1A1A1A;}
@@ -1123,7 +1132,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 @media only screen and (orientation:portrait){}
 @media screen and (max-width:1440px){}
 @media screen and (max-width:1366px){}
-@media screen and (max-width:1280px){}
+@media screen and (max-width:1280px){.bannrTxtbox{top: 150px;}}
 @media screen and (max-width:1080px){	.bannersctn img{height:800px; object-fit:cover;}}
 @media(min-width: 981px) and ( max-width: 1024px){.bannrTxtbox{top:150px;}} 
 @media screen and (min-width:768px) and (max-width:991px){}
@@ -1154,9 +1163,9 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 	.incldcrd{grid-template-columns: repeat(1, 1fr);}
 	.itin-tab {
         gap: 0;
-        padding: 12px 12px;
+        padding: 12px 7px;;
     }
-	.itinerary-tabs{gap: 0;}
+	.itinerary-tabs{gap:0; padding: 15px 15px;}
 	.accordion-content{grid-template-columns: 1fr;}
 	.enquirybx{padding: 28px 28px;}
 }

@@ -50,7 +50,7 @@
                     <div class="col-md-2 no-pad">
                     	<div class="sitelogo">
                             <a class="navbar-brand" href="index.html" id="" aria-label="Lilkis Home">
-                          	  <img src="images/logo.svg" class="img-responsive" alt=""/>
+                          	  <img src="images/logo.svg" id="navLogo" class="img-responsive" alt=""/>
                             </a>
                        </div>
                     </div>
@@ -465,6 +465,38 @@ document.querySelectorAll('.nav.navbar-nav li a').forEach(function(link) {
 </script>
 
 <!-- InstanceBeginEditable name="EditRegion6" -->
+<script type="text/javascript">
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('animate');
+        } else {
+            entry.target.classList.remove('animate');
+        }
+    });
+}, { threshold: 0.2 });
+
+// observe h1 also
+document.querySelectorAll('').forEach(el => {
+    observer.observe(el);
+});
+</script>
+
+<script  type="text/javascript">
+	const navbar = document.querySelector('.navbar');
+const navLogo = document.getElementById('navLogo');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+        navLogo.src = 'images/logo-dark.svg';
+    } else {
+        navbar.classList.remove('scrolled');
+        navLogo.src = 'images/logo.svg';
+    }
+});
+</script>
+
 <!-- InstanceEndEditable -->
 </body>
 <!-- InstanceEnd --></html>
