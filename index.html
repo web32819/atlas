@@ -187,9 +187,23 @@
 					</div>
 				</div>
 				
-				<video id="myVideo" playsinline="" autoplay muted="" loop>
-					<source src="video/video-banner-one.mp4" type="video/mp4">
-				</video>
+				<div class="visible-lg visible-md">
+					<video id="myVideo" playsinline="" autoplay muted="" loop>
+						<source src="video/video-banner-dekstop.mp4" type="video/mp4">
+					</video>
+				</div>
+				
+				<div class="visible-sm">
+					<video id="myVideo" playsinline="" autoplay muted="" loop>
+						<source src="video/video-banner-ipad.mp4" type="video/mp4">
+					</video>
+				</div>
+				
+				<div class="visible-xs">
+					<video id="myVideo" playsinline="" autoplay muted="" loop>
+						<source src="video/video-banner-mb.mp4" type="video/mp4">
+					</video>
+				</div>
 				
 				<div class="clearfix"></div>
 			</div>
@@ -501,6 +515,23 @@ window.addEventListener('scroll', () => {
         navbar.classList.remove('scrolled');
         navLogo.src = 'images/logo.svg';
     }
+});
+</script>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('animate');
+        } else {
+            entry.target.classList.remove('animate');
+        }
+    });
+}, { threshold: 0.2 });
+
+// observe h1 also
+document.querySelectorAll('.exprncsctn h2, .exprncsctn h1').forEach(el => {
+    observer.observe(el);
 });
 </script>
 

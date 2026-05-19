@@ -739,17 +739,7 @@ document.querySelectorAll('.nav.navbar-nav li a').forEach(function(link) {
 </script>
 
 <!-- InstanceBeginEditable name="EditRegion6" -->
-<script>
-function adjustTimelineLines() {
-    document.querySelectorAll('.itin-row').forEach(row => {
-        const accordion = row.querySelector('.itin-accordion');
-        const line = row.querySelector('.timeline-line');
-        if (line) {
-            line.style.height = accordion.offsetHeight + 'px';
-        }
-    });
-}
-
+<script type="text/javascript">
 function toggleAccordion(header) {
     const accordion = header.parentElement;
     const isOpen = accordion.classList.contains('open');
@@ -769,12 +759,12 @@ function toggleAccordion(header) {
         if (matchingTab) matchingTab.classList.add('active');
     }
 
-    // Wait for animation then adjust
     setTimeout(adjustTimelineLines, 520);
 }
 
 document.querySelectorAll('.itin-tab').forEach(tab => {
     tab.addEventListener('click', function () {
+
         document.querySelectorAll('.itin-tab').forEach(t => t.classList.remove('active'));
         this.classList.add('active');
 
@@ -788,14 +778,27 @@ document.querySelectorAll('.itin-tab').forEach(tab => {
         if (target) {
             const acc = target.querySelector('.itin-accordion');
             acc.classList.add('open');
-            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
 
-        setTimeout(adjustTimelineLines, 520);
+            setTimeout(() => {
+                const navHeight = document.querySelector('.navbar') ? document.querySelector('.navbar').offsetHeight : 0;
+                const targetTop = target.getBoundingClientRect().top + window.pageYOffset - navHeight - 30;
+                window.scrollTo({ top: targetTop, behavior: 'smooth' });
+                adjustTimelineLines();
+            }, 550);
+        }
     });
 });
 
-// Run on page load
+function adjustTimelineLines() {
+    document.querySelectorAll('.itin-row').forEach(row => {
+        const accordion = row.querySelector('.itin-accordion');
+        const line = row.querySelector('.timeline-line');
+        if (line) {
+            line.style.height = accordion.offsetHeight + 'px';
+        }
+    });
+}
+
 window.addEventListener('load', adjustTimelineLines);
 </script>
 <!-- InstanceEndEditable -->

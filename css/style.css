@@ -401,8 +401,6 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 .bannersctn video{
 	width: 100%;
     margin: 0 auto;
-    height:800px;
-    object-fit: cover;
 }
 .bannrBox {
 	position: relative;
@@ -424,8 +422,8 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
   gap: 10px;
   background:#C39E4B;
   text-decoration: none;
-  font-size:20px;
-  font-weight: 500;
+  font-size:16px;
+  font-weight:600;
   padding:20px 27px;
   border-radius:20px;
   position: relative;
@@ -455,7 +453,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
   rotate:312deg;
 }
 .exprnc:hover::before { transform: translateX(0);}
-.exprnc:hover {border-color: rgba(0, 0, 0, 0.3);}
+.exprnc:hover {border-color: rgba(0, 0, 0, 0.5);}
 .exprnc:hover svg {transform: translateX(6px);}
 .exprncsctn{background:#FCFAF4;}
 .exprncsctn h2{
@@ -669,7 +667,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 }
 .infobar-item {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 12px;
     flex: 1;
     justify-content: center;
@@ -1170,7 +1168,6 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 	.bxsctn{grid-template-columns: 2fr 3fr;}
 	.infobar{padding: 22px 15px;}
 	.rchsctn{grid-template-columns:1fr;}
-	.bannersctn video{height:800px;}
 }
 @media screen and (max-width:767px){}
 @media screen and (max-width:540px){}
@@ -1184,13 +1181,13 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 	.definsctnbx {flex: 1 50%;}
 	.bxsctn{grid-template-columns:1fr;}
 	.incldcrd{grid-template-columns: repeat(1, 1fr);}
-	.itin-tab {
-        gap: 0;
-        padding: 12px 7px;;
-    }
+	.itin-tab { gap: 0; padding: 12px 7px;}
 	.itinerary-tabs{gap:0; padding: 15px 15px;}
 	.accordion-content{grid-template-columns: 1fr;}
 	.enquirybx{padding: 28px 28px;}
+	.accordion-header h3{font-size:19px;}
+	.infobar{gap:20px; flex-wrap: wrap;}
+	.infobar-item{flex-wrap: wrap; flex: 1 50%; justify-content: flex-start; align-items: flex-start;}
 }
 @media (max-width:414px){}
 @media (max-width:394px){}
