@@ -107,7 +107,7 @@
 					<div class="navigatnBox">
 						<div id="mySidebar" class="sidebar">
                         	<div class="sclbox">
-                            	<div class="col-xs-6 col-sm-7 no-pad"">
+                            	<div class="col-xs-6 col-sm-7 no-pad">
                                     <a class="navbar-brand" href="index.html" id="" aria-label="Lilkis Home">
                                         <img src="images/inner-logo.svg" class="img-responsive mblimg" alt=""/>
                                     </a>
@@ -246,7 +246,7 @@
 	
         <div class="howbegan-header">
             <div class="howbegan-eyebrow">
-                <span class="line"></span>
+                <span class="line"></span>	
                 HOW
                 <span class="line"></span>
             </div>
@@ -419,7 +419,8 @@ document.querySelectorAll('.nav.navbar-nav li a').forEach(function(link) {
 </script>
 
 <!-- InstanceBeginEditable name="EditRegion6" -->
-<script>
+
+<script type="text/javascript">
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -431,10 +432,11 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.2 });
 
 // observe h1 also
-document.querySelectorAll('').forEach(el => {
+document.querySelectorAll('.exprncsctn h2, .exprncsctn h1, .exprncsctn p, .waytxtbxcard h3, .definsctnbx h4, .definsctnbx img, .howbegan-eyebrow, .howbegan-title, .hb-card').forEach(el => {
     observer.observe(el);
 });
 </script>
+
 <!-- InstanceEndEditable -->
 </body>
 <!-- InstanceEnd --></html>

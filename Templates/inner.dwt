@@ -107,7 +107,7 @@
 					<div class="navigatnBox">
 						<div id="mySidebar" class="sidebar">
                         	<div class="sclbox">
-                            	<div class="col-xs-6 col-sm-7 no-pad"">
+                            	<div class="col-xs-6 col-sm-7 no-pad">
                                     <a class="navbar-brand" href="../index.html" id="" aria-label="Lilkis Home">
                                         <img src="images/inner-logo.svg" class="img-responsive mblimg" alt=""/>
                                     </a>

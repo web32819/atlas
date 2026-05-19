@@ -107,7 +107,7 @@
 					<div class="navigatnBox">
 						<div id="mySidebar" class="sidebar">
                         	<div class="sclbox">
-                            	<div class="col-xs-6 col-sm-7 no-pad"">
+                            	<div class="col-xs-6 col-sm-7 no-pad">
                                     <a class="navbar-brand" href="index.html" id="" aria-label="Lilkis Home">
                                         <img src="images/inner-logo.svg" class="img-responsive mblimg" alt=""/>
                                     </a>
@@ -739,6 +739,23 @@ document.querySelectorAll('.nav.navbar-nav li a').forEach(function(link) {
 </script>
 
 <!-- InstanceBeginEditable name="EditRegion6" -->
+<script type="text/javascript">
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('animate');
+        } else {
+            entry.target.classList.remove('animate');
+        }
+    });
+}, { threshold: 0.2 });
+
+// observe h1 also
+document.querySelectorAll('.exprncsctn h2, .exprncsctn h1, .exprncsctn p, .waytxtbxcard h3, .bxsctnwrpr h4, .bxsctnwrpr p, .incldsctn h1, .incldcrdbx, .pckgbx .incldbx ul li, .pckgbx .incldbx h3').forEach(el => {
+    observer.observe(el);
+});
+</script>
+
 <script type="text/javascript">
 function toggleAccordion(header) {
     const accordion = header.parentElement;
