@@ -687,7 +687,6 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
     display: flex;
     align-items: flex-start;
     gap: 12px;
-    flex: 1;
     justify-content: center;
 }
 .infobar-item svg{width:32px; height:37px;}
@@ -1207,13 +1206,18 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 }
 .flw-sub{font-size: 14px; color: #9D7F52; font-weight:500; font-family: "Manrope", sans-serif;}
 .flw-arrow{color: #9D7F52; font-size: 18px;}
+.racebxsctn{grid-template-columns:2fr 2fr; gap: 40px;}
 /*MEDIA QUERY CSS STARTS HERE*/
 @media only screen and (orientation:portrait){}
 @media screen and (max-width:1440px){}
-@media screen and (max-width:1366px){}
-@media screen and (max-width:1280px){.bannrTxtbox{top: 150px;}}
-@media screen and (max-width:1080px){	.bannersctn img{height:800px; object-fit:cover;}}
-@media(min-width: 981px) and ( max-width: 1024px){.bannrTxtbox{top:150px;}} 
+@media screen and (max-width:1366px){
+	.bannrTxtbox{top: 110px;}
+	.bannrTxtbox .bannrBox a.exprnc{margin-top:15px;}
+}
+@media screen and (max-width:1280px){}
+@media screen and (max-width:1080px){.bannersctn img{height:800px; object-fit:cover;}}
+@media(min-width: 981px) and ( max-width: 1024px){
+} 
 @media screen and (min-width:768px) and (max-width:991px){}
 @media all and (min-width:768px) and (max-width:991px) and (orientation:landscape) {}
 @media screen and (max-width:991px) {
@@ -1228,7 +1232,11 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 	.infobar{padding: 22px 15px;}
 	.rchsctn{grid-template-columns:1fr;}
 }
-@media screen and (max-width:767px){}
+@media screen and (max-width:767px){
+	.itin-tab { gap: 0; padding: 12px 7px; flex-wrap: wrap; justify-content: center;}
+	.itinerary-tabs{gap:6px; padding:15px;}
+	.accordion-content{grid-template-columns: 1fr;}
+}
 @media screen and (max-width:540px){}
 @media screen and (orientation: landscape) and (max-height: 500px) {}
 @media (max-width:480px){
@@ -1240,9 +1248,6 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 	.definsctnbx {flex: 1 50%;}
 	.bxsctn{grid-template-columns:1fr;}
 	.incldcrd{grid-template-columns: repeat(1, 1fr);}
-	.itin-tab { gap: 0; padding: 12px 7px;}
-	.itinerary-tabs{gap:0; padding: 15px 15px;}
-	.accordion-content{grid-template-columns: 1fr;}
 	.enquirybx{padding: 28px 28px;}
 	.accordion-header h3{font-size:19px;}
 	.infobar{gap:20px; flex-wrap: wrap;}
