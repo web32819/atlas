@@ -366,8 +366,9 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 	text-transform:uppercase;
 	color:#2B200B;
 	font-size:16px;
+	line-height: 30px;
 	outline:none;
-	text-decoration:underline;
+	border-bottom:1px solid #9D7F52;
 }
 .viewtxt:hover{color:#9D7F52;}
 .borderbx{
@@ -455,11 +456,13 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 .exprnc:hover::before { transform: translateX(0);}
 .exprnc:hover {border-color: rgba(0, 0, 0, 0.5);}
 .exprnc:hover svg {transform: translateX(6px);}
+.exprnctnr{padding-top:150px;}
 .exprncsctn{background:#FCFAF4;}
 .exprncsctn h2{
+	position:relative;
 	color:#9D7F52;
 	letter-spacing:2px;
-	line-height:80px;
+	line-height:50px;
 	font-size:15px;
 	text-transform:uppercase;
 	font-weight:600;
@@ -468,12 +471,31 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
     opacity: 0;
     transform: translateY(30px);
 }
+.exprncsctn h2:after{
+	content:'';
+	position:absolute;
+	background:#9D7F52;
+	width:20px;
+	height:1px;
+	top: 24px;
+    right: 27vw;
+}
+.exprncsctn h2:before{
+	content:'';
+	position:absolute;
+	background:#9D7F52;
+	width:20px;
+	height:1px;
+	top: 24px;
+    left: 27vw;
+}
 .exprncsctn h2.animate{ opacity: 1; transform: translateY(0px);}
 .exprncsctn h1{
 	font-size:45px; 
 	color:#2B200B;
 	transition: opacity 0.9s ease, transform 0.9s ease;
     opacity: 0;
+	line-height:45px;
     transform: translateY(30px);
 }
 .exprncsctn h1.animate{ opacity: 1; transform: translateY(0px);}
@@ -493,7 +515,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 	position:relative;
 	background:#FFF;
 	border-radius:6px;
-	border:1px solid #9D7F52;
+	border:1px solid rgba(157,127,82,.55);
 }
 .service-card:before{
 	position:absolute;
@@ -620,7 +642,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 }
 .waybxcard{
 	border-radius:20px;
-	border:1px solid #9D7F52;
+	border:1px solid rgba(157,127,82,.55);
 	background:#FCFAF4;
 	transition: transform 0.35s ease, box-shadow 0.35s ease; 
 	overflow: hidden;
@@ -646,7 +668,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 .upprfootr p a{color:#FFF;}
 .upprfootr ul{
 	padding-inline-start:0;
-	margin:15px auto;
+	margin: 47px auto 15px;
 	display:table;
 }
 .upprfootr ul li{list-style-type:none; display:inline; margin:0 5px;}
