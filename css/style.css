@@ -1239,10 +1239,11 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 	.bxsctn{grid-template-columns: 2fr 3fr;}
 	.infobar{padding: 22px 15px;}
 	.rchsctn{grid-template-columns:1fr;}
+	.bannersctn img{height: 600px;}
 }
 @media screen and (max-width:767px){
-	.itin-tab { gap: 0; padding: 12px 7px; flex-wrap: wrap; justify-content: center;}
-	.itinerary-tabs{gap:6px; padding:15px;}
+	.itin-tab { gap: 0; padding: 12px 8px; flex-wrap: wrap; justify-content: center;}
+	.itinerary-tabs{gap:6px; padding:15px 8px;}
 	.accordion-content{grid-template-columns: 1fr;}
 }
 @media screen and (max-width:540px){}
@@ -1260,6 +1261,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 	.accordion-header h3{font-size:19px;}
 	.infobar{gap:20px; flex-wrap: wrap;}
 	.infobar-item{flex-wrap: wrap; flex: 1 50%; justify-content: flex-start; align-items: flex-start;}
+	.innrbnr .bannrTxtbox{top: 190px;}
 }
 @media (max-width:414px){}
 @media (max-width:394px){}

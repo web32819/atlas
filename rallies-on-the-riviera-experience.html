@@ -802,10 +802,10 @@ document.querySelectorAll('.itin-tab').forEach(tab => {
 
             setTimeout(() => {
                 const navHeight = document.querySelector('.navbar') ? document.querySelector('.navbar').offsetHeight : 0;
-                const targetTop = target.getBoundingClientRect().top + window.pageYOffset - navHeight - 30;
+                const targetTop = target.getBoundingClientRect().top + window.pageYOffset - navHeight - 100;
                 window.scrollTo({ top: targetTop, behavior: 'smooth' });
                 adjustTimelineLines();
-            }, 550);
+            }, 600);
         }
     });
 });
