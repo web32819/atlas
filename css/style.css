@@ -505,6 +505,27 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
     transform: translateY(30px);
 }
 .exprncsctn p.animate{opacity: 1; transform: translateY(0px);}
+.exprncsctn p.incldbxtxt{
+	background: #9D7F52;
+    margin-top: 22px;
+    color: #FFF;
+	font-size:18px;
+    display: inline;
+    padding: 5px 12px;
+    position: absolute;
+    bottom: -23px;
+}
+.exprncsctn p.incldbxtxt:after{
+	content: '';
+    position: absolute;
+    right: -20px;
+    top: -1px;
+    width: 0;
+    height: 0;
+    border-top: 47px solid transparent;
+    border-right: 0 solid transparent;
+    border-left: 20px solid #9D7F52;
+}
 .servicegrid{
 	margin-top:50px;
 	display: grid;
@@ -570,6 +591,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 	text-align:left;
 }
 .card-location {
+	position:relative;
     display: inline-block;
     background: #9D7F52;
     color: #fff;
@@ -577,6 +599,17 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 	font-weight:500;
     padding: 5px 14px;
 	font-family: "Manrope", sans-serif;
+}
+.card-location:after{
+	content: '';
+    position: absolute;
+    right: -20px;
+    top: 0px;
+    width: 0;
+    height: 0;
+    border-top: 32px solid transparent;
+    border-right: 0 solid transparent;
+    border-left: 20px solid #9D7F52;
 }
 .card-divider {
     height: 1px;
@@ -960,6 +993,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 .tchbx p a{color:#4D4D4D; font-weight:700;}
 .pckgbx{border:1px solid rgba(157,127,82,.55);}
 .pckgbxhdng{
+	position:relative;
 	background:#FCFAF4;
 	padding:30px 48px;
 	-webkit-border-top-left-radius: 20px;
