@@ -128,7 +128,7 @@
                             </div>
                             
                             <div class="sclbox">
-                            	<h4>Follow Us:</h4>
+                            	
                                 <ul>
                                     <li>
                                         <a href="#" target="_blank">
@@ -171,7 +171,7 @@
 						<div class="col-lg-12 col-md-12">
 							<div class="bannrTxtbox">
 								<div class="bannrBox">
-									<h1>Rallies On The Riviera</h1>
+									<h1>Race - Relax - Repeat</h1>
 								</div>
 							</div>
 							<div class="clearfix"></div>
@@ -179,7 +179,9 @@
 					</div>
 				</div>
 				
-				<img src="images/relax-banner.webp" class="img-responsive" fetchpriority="high" alt=""/>
+				<img src="images/relax-banner.webp" class="img-responsive visible-lg visible-md" fetchpriority="high" alt=""/>
+				<img src="images/relax-banner-ipad.webp" class="img-responsive visible-sm" fetchpriority="high" alt=""/>
+				<img src="images/relax-banner-mb.webp" class="img-responsive visible-xs" fetchpriority="high" alt=""/>
 				<div class="clearfix"></div>
 			</div>
 		</div>
@@ -336,7 +338,7 @@
 										</ul>
 										
 										<div class="accordion-img">
-											<img src="images/experience/itenary-image-two.webp" alt="Day 1" class="img-responsive"/>
+											<img src="images/experience/abu-dhabi/itenary-day-one.webp" alt="Day 1" class="img-responsive"/>
 										</div>
 										
 									</div>
@@ -381,7 +383,7 @@
 											</li>
 										</ul>
 										<div class="accordion-img">
-											<img src="images/experience/itenary-image-two.webp" alt="Day 2" class="img-responsive"/>
+											<img src="images/experience/abu-dhabi/itenary-image-two.webp" alt="Day 2" class="img-responsive"/>
 										</div>
 									</div>
 								</div>
@@ -423,7 +425,7 @@
 											</li>
 										</ul>
 										<div class="accordion-img">
-											<img src="images/experience/itenary-image-three.webp" alt="Day 3" class="img-responsive"/>
+											<img src="images/experience/abu-dhabi/itenary-image-three.webp" alt="Day 3" class="img-responsive"/>
 										</div>
 									</div>
 								</div>
@@ -465,7 +467,7 @@
 											</li>
 										</ul>
 										<div class="accordion-img">
-											<img src="images/experience/itenary-image-four.webp" alt="Day 4" class="img-responsive"/>
+											<img src="images/experience/abu-dhabi/itenary-image-four.webp" alt="Day 4" class="img-responsive"/>
 										</div>
 									</div>
 								</div>
@@ -503,7 +505,7 @@
 											</li>
 										</ul>
 										<div class="accordion-img">
-											<img src="images/experience/itenary-image-four.webp" alt="Day 4" class="img-responsive"/>
+											<img src="images/experience/abu-dhabi/itenary-image-five.webp" alt="Day 4" class="img-responsive"/>
 										</div>
 									</div>
 								</div>
@@ -844,7 +846,7 @@ document.querySelectorAll('.itin-tab').forEach(tab => {
 
             setTimeout(() => {
                 const navHeight = document.querySelector('.navbar') ? document.querySelector('.navbar').offsetHeight : 0;
-                const targetTop = target.getBoundingClientRect().top + window.pageYOffset - navHeight - 100;
+                const targetTop = target.getBoundingClientRect().top + window.pageYOffset - navHeight - 30;
                 window.scrollTo({ top: targetTop, behavior: 'smooth' });
                 adjustTimelineLines();
             }, 600);

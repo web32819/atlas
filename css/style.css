@@ -1253,8 +1253,9 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 	.bannrTxtbox .bannrBox a.exprnc{margin-top:15px;}
 }
 @media screen and (max-width:1280px){}
-@media screen and (max-width:1080px){.bannersctn img{height:800px; object-fit:cover;}}
+@media screen and (max-width:1080px){}
 @media(min-width: 981px) and ( max-width: 1024px){
+	.bannersctn img{height:800px; object-fit:cover;}
 } 
 @media screen and (min-width:768px) and (max-width:991px){}
 @media all and (min-width:768px) and (max-width:991px) and (orientation:landscape) {}
@@ -1269,12 +1270,13 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 	.bxsctn{grid-template-columns: 2fr 3fr;}
 	.infobar{padding: 22px 15px;}
 	.rchsctn{grid-template-columns:1fr;}
-	.bannersctn img{height: 600px;}
 }
 @media screen and (max-width:767px){
 	.itin-tab { gap: 0; padding: 12px 8px; flex-wrap: wrap; justify-content: center;}
 	.itinerary-tabs{gap:6px; padding:15px 8px;}
 	.accordion-content{grid-template-columns: 1fr;}
+	.bxsctn{grid-template-columns:1fr;}
+	.bxsctnwrpr h4{padding: 0 0 30px;}
 }
 @media screen and (max-width:540px){}
 @media screen and (orientation: landscape) and (max-height: 500px) {}
@@ -1285,7 +1287,6 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 	.bannrTxtbox{top:150px;}
 	.howbegan-grid{grid-template-columns: repeat(1, 1fr);}
 	.definsctnbx {flex: 1 50%;}
-	.bxsctn{grid-template-columns:1fr;}
 	.incldcrd{grid-template-columns: repeat(1, 1fr);}
 	.enquirybx{padding: 28px 28px;}
 	.accordion-header h3{font-size:19px;}

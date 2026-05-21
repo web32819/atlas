@@ -128,7 +128,7 @@
                             </div>
                             
                             <div class="sclbox">
-                            	<h4>Follow Us:</h4>
+                            	
                                 <ul>
                                     <li>
                                         <a href="#" target="_blank">
@@ -179,7 +179,9 @@
 					</div>
 				</div>
 				
-				<img src="images/innerbanner.webp" class="img-responsive" fetchpriority="high" alt=""/>
+				<img src="images/innerbanner.webp" class="img-responsive visible-lg visible-md" fetchpriority="high" alt=""/>
+				<img src="images/innerbanner-ipad.webp" class="img-responsive visible-sm" fetchpriority="high" alt=""/>
+				<img src="images/innerbanner-mb.webp" class="img-responsive visible-xs" fetchpriority="high" alt=""/>
 				<div class="clearfix"></div>
 			</div>
 		</div>
@@ -802,7 +804,7 @@ document.querySelectorAll('.itin-tab').forEach(tab => {
 
             setTimeout(() => {
                 const navHeight = document.querySelector('.navbar') ? document.querySelector('.navbar').offsetHeight : 0;
-                const targetTop = target.getBoundingClientRect().top + window.pageYOffset - navHeight - 100;
+                const targetTop = target.getBoundingClientRect().top + window.pageYOffset - navHeight - 30;
                 window.scrollTo({ top: targetTop, behavior: 'smooth' });
                 adjustTimelineLines();
             }, 600);
