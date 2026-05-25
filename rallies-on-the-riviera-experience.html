@@ -265,8 +265,16 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<h2>Day by day</h2>
-				<h1>Itinerary</h1>
+			
+				<!-- <h2>Day by day</h2>
+				<h1>Itinerary</h1> -->
+				
+				<div class="sctninnr">
+					<div class="sctninnr-eyebrow">
+						<span class="line"></span>Day by day<span class="line"></span>
+					</div>
+					<h2 class="sctninnr-title titletxt">Itinerary</h2>
+				</div>
 				
 				<div class="col-md-8 col-md-offset-2">
 					<div class="itinerary-tabs">
@@ -758,7 +766,7 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.2 });
 
 // observe h1 also
-document.querySelectorAll('.exprncsctn h2, .exprncsctn h1, .exprncsctn p, .waytxtbxcard h3, .bxsctnwrpr h4, .bxsctnwrpr p, .incldsctn h1, .incldcrdbx, .pckgbx .incldbx ul li, .pckgbx .incldbx h3').forEach(el => {
+document.querySelectorAll('.exprncsctn h2, .exprncsctn h1, .exprncsctn p, .waytxtbxcard h3, .bxsctnwrpr h4, .bxsctnwrpr p, .incldsctn h1, .incldcrdbx, .pckgbx .incldbx ul li, .pckgbx .incldbx h3, .sctninnr, .pckgbxhdng h2').forEach(el => {
     observer.observe(el);
 });
 </script>

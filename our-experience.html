@@ -170,8 +170,15 @@
 		<div class="row">
 			<div class="col-md-12">
 				
-				<h2>Our</h2>
-				<h1>Experiences</h1>
+				<div class="sctninnr">
+					<div class="sctninnr-eyebrow">
+						<span class="line"></span>OUR<span class="line"></span>
+					</div>
+					<h2 class="sctninnr-title">Experiences</h2>
+				</div>
+				
+				<!-- <h2>Our</h2>
+				<h1>Experiences</h1> -->
 				
 				<div class="servicegrid">
 					<div class="service-card">
@@ -401,7 +408,7 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.2 });
 
 // observe h1 also
-document.querySelectorAll('.exprncsctn h2, .exprncsctn h1').forEach(el => {
+document.querySelectorAll('.exprncsctn h2, .exprncsctn h1, .sctninnr').forEach(el => {
     observer.observe(el);
 });
 </script>

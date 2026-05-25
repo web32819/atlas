@@ -200,9 +200,15 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<h2>Our</h2>
-				<h1>Approach</h1>
+				<!-- <h2>Our</h2>
+				<h1>Approach</h1> -->
 				
+				<div class="sctninnr">
+					<div class="sctninnr-eyebrow">
+						<span class="line"></span>Our<span class="line"></span>
+					</div>
+					<h2 class="sctninnr-title">Approach</h2>
+				</div>
 				
 				<div class="sltnbxwrppr">
 				
@@ -432,7 +438,7 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.2 });
 
 // observe h1 also
-document.querySelectorAll('.exprncsctn h2, .exprncsctn h1, .exprncsctn p, .waytxtbxcard h3, .definsctnbx h4, .definsctnbx img, .howbegan-eyebrow, .howbegan-title, .hb-card, .definsctnbx img').forEach(el => {
+document.querySelectorAll('.exprncsctn h2, .exprncsctn h1, .exprncsctn p, .waytxtbxcard h3, .definsctnbx h4, .definsctnbx img, .howbegan-eyebrow, .howbegan-title, .hb-card, .definsctnbx img, .sctninnr, .pckgbxhdng h2').forEach(el => {
     observer.observe(el);
 });
 </script>

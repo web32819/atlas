@@ -458,7 +458,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 .exprnc:hover svg {transform: translateX(6px);}
 .exprnctnr{padding-top:150px;}
 .exprncsctn{background:#FCFAF4;}
-.exprncsctn h2{
+/* .exprncsctn h2{
 	position:relative;
 	color:#9D7F52;
 	letter-spacing:2px;
@@ -489,7 +489,41 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 	top: 24px;
     left: 27vw;
 }
-.exprncsctn h2.animate{ opacity: 1; transform: translateY(0px);}
+.exprncsctn h2.animate{ opacity: 1; transform: translateY(0px);} */
+.sctninnr{
+	position: relative;
+    z-index: 2;
+    width: 100%;
+	opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+.sctninnr.animate{opacity: 1; transform: translateY(0px);}
+.sctninnr-eyebrow{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-weight: 400;
+	text-transform:uppercase;
+    font-size: 15px;
+    letter-spacing: 0.2em;
+    color: #9D7F52;
+    margin-bottom:15px;
+}
+.sctninnr-eyebrow .line {
+    display: inline-block;
+    width: 28px;
+    height: 1px;
+    background: #9D7F52;
+}
+.sctninnr-title{
+    font-size: 52px;
+    font-weight: 400;
+    color: #2B200B;
+	margin-bottom: 60px;
+}
+.titletxt{margin-bottom:0;}
 .exprncsctn h1{
 	font-size:45px; 
 	color:#2B200B;
@@ -527,7 +561,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
     border-left: 20px solid #9D7F52;
 }
 .servicegrid{
-	margin-top:50px;
+	margin-top:90px;
 	display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap:25px;
@@ -1013,7 +1047,11 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 	color:#2B200B;
 	letter-spacing:0;
 	font-family: "Prata", serif;
+	opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
 }
+.pckgbxhdng h2.animate{opacity: 1; transform: translateY(0px);}
 .pckgbxhdng h2:after{display:none;}
 .pckgbxhdng h2:before{display:none;}
 .pckgbxhdng p{text-align:left; color:#9D7F52; font-size:17px; line-height:36px; font-weight:600; margin-bottom:0;}
