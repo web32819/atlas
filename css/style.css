@@ -376,7 +376,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 	display: inline-table;
 }
 .imgradius{border-radius:20px;}
-.sectionbx{padding:80px 0;}
+.sectionbx{padding:60px 0;}
 #myNavbar{padding:0 0;}
 .scrolled {
     transition: 0.5s;
@@ -559,7 +559,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
     border-left: 20px solid #9D7F52;
 }
 .servicegrid{
-	margin-top:90px;
+	margin-top:60px;
 	display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap:25px;
@@ -996,7 +996,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 }
 .incldsctn h1.animate{opacity: 1; transform: translateY(0px);}
 .incldcrd{
-	margin-top: 90px;
+	margin-top:50px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap:40px;
@@ -1261,7 +1261,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 /* Badge sits ON the border line */
 .rchsctn{
 	display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 2fr 3fr;
     gap: 50px;
 	align-items: start;
 }
