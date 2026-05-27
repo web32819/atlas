@@ -852,16 +852,17 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
     font-weight:600;
     color: #FFF;
     transition: color 0.3s ease;
+	line-height:27px;
 }
 .itin-tab .day-date {
     font-size: 15px;
 	font-weight:500;
-    color: #D9D9D9;
+    color: rgba(255, 255, 255, .8);
     transition: color 0.3s ease;
 }
 .itin-tab.active {background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.08);}
-.itin-tab.active .day-num {color: #2B200B; font-size:20px; font-weight:600;}
-.itin-tab.active .day-date {color: #707070; font-size:15px; font-weight:500;}
+.itin-tab.active .day-num {color:#9D7F52; font-size:20px; font-weight:600;}
+.itin-tab.active .day-date {color:#C39E4B; font-size:15px; font-weight:500;}
 .itin-tab:hover:not(.active) .day-num {color: #FFF;}
 .itenarysctn h2:after{right:25vw;}
 .itenarysctn h2:before{left:25vw;}
@@ -1340,7 +1341,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 	.rchsctn{grid-template-columns:1fr;}
 }
 @media screen and (max-width:767px){
-	.itin-tab { gap: 0; padding: 12px 8px; flex-wrap: wrap; justify-content: center;}
+	.itin-tab { gap: 0; padding: 12px 7px; flex-wrap: wrap; justify-content: center;}
 	.itinerary-tabs{gap:6px; padding:15px 8px;}
 	.accordion-content{grid-template-columns: 1fr;}
 	.bxsctn{grid-template-columns:1fr;}
