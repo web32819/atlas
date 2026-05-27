@@ -518,7 +518,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 .sctninnr-title{
     font-weight: 400;
     color: #4D4D4D;
-	margin-bottom: 60px;
+	margin-bottom: 30px;
 }
 .titletxt{margin-bottom:0;}
 .exprncsctn h1{
@@ -560,7 +560,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 .servicegrid{
 	margin-top:90px;
 	display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap:25px;
 }
 .service-card{
@@ -614,12 +614,13 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 }
 .arrow-btn:hover {background: #7a6340;}
 .arrow-btn svg { width: auto;  height:22px;}
-.card-content {padding: 50px; position:relative;}
+.card-content {padding:35px; position:relative;}
 .card-title {
     font-weight: 400;
-    margin-bottom:30px;
+    margin-bottom:20px;
     color: #2B200B;
 	text-align:left;
+	font-size: 24px;
 }
 .card-location {
 	position:relative;
@@ -676,8 +677,8 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
     color: #9D7F52;
 }
 .meta-item svg{
-	width:40px;
-	height:40px;
+	width:30px;
+	height:30px;
 }
 .meta-item div {display: flex; flex-direction: column;}
 .meta-label {
@@ -686,7 +687,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
     color: #2B200B;
 }
 .meta-value {
-    font-size: 24px;
+    font-size: 19px;
     font-weight: 500;
     color: #2B200B;
 	font-family: "Manrope", sans-serif;
@@ -728,7 +729,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 }
 .waybxcard .waytxtbxcard h3.animate{opacity: 1; transform: translateY(0px);}
 .waybxcard .waytxtbxcard p{text-align:left;}
-.upprfootr{background:#161716; text-align:center;}
+.upprfootr{background:#161716; text-align:center; padding: 30px 0;}
 .upprfootr p a{color:#FFF;}
 .upprfootr ul{
 	padding-inline-start:0;
@@ -1348,7 +1349,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 @media screen and (max-width:540px){}
 @media screen and (orientation: landscape) and (max-height: 500px) {}
 @media (max-width:480px){
-	.servicegrid{grid-template-columns: repeat(1, 1fr);}
+	.servicegrid{grid-template-columns: repeat(1, 1fr); margin-top: 50px;}
 	.waybx{grid-template-columns: repeat(1, 1fr);}
 	.bannrTxtbox h1{line-height:52px; font-size:40px;}
 	.bannrTxtbox{top:150px;}
@@ -1360,6 +1361,8 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 	.infobar{gap:20px; flex-wrap: wrap;}
 	.infobar-item{flex-wrap: wrap; flex: 1 50%; justify-content: flex-start; align-items: flex-start;}
 	.innrbnr .bannrTxtbox{top: 190px;}
+	.sctninnr-title{font-size:36px; margin-bottom:40px;}
+	.sctninnr-eyebrow{margin-bottom:8px;}
 }
 @media (max-width:414px){}
 @media (max-width:394px){}
