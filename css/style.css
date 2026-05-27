@@ -415,13 +415,6 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
     object-fit: cover;
     z-index: 0;
 }
-.bannersctn .container {
-    position: relative;
-    z-index: 2;
-    height:100vh;
-    display: flex;
-    align-items: center;
-}
 .bannrBox {
 	position: relative;
     z-index: 99;
@@ -429,15 +422,13 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 }
 .bannrTxtbox{
 	position: relative;
-    top: 0;
+    top:180px;
     width: 100%;
     left:10px;
     z-index:2;
 }
 /* Remove any white gap below banner */
-.bannersctn .col-md-12 {
-    height: 100vh;
-}
+.bannersctn .col-md-12 {  height: 100vh;}
 .bannrTxtbox h1{color:#FFF; text-align:left; line-height:75px;}
 .bannrTxtbox p{font-weight:400; color:#FFF; font-size:18px; line-height:24px; margin-bottom:10px;}
 .exprnc {
@@ -1354,7 +1345,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 @media screen and (min-width:768px) and (max-width:991px){}
 @media all and (min-width:768px) and (max-width:991px) and (orientation:landscape) {}
 @media screen and (max-width:991px) {
-	.bannrTxtbox{left:0; padding:0 15px;}
+	.bannrTxtbox{left:0;}
 	.waybx{grid-template-columns: repeat(2, 1fr);}
 	.card-content{padding: 30px;}
 	.philosophybx ul{column-count: 1;}
