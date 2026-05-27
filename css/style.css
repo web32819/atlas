@@ -723,7 +723,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
     color: #2B200B;
     font-size: 24px;
     line-height: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 	opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.9s ease, transform 0.9s ease;
@@ -787,7 +787,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 	font-family: "Manrope", sans-serif;
 }
 .info-value {
-    font-size:24px;
+    font-size:20px;
     color: #FFF;
     font-weight:500;
 	font-family: "Manrope", sans-serif;
