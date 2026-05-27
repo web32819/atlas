@@ -9,7 +9,7 @@ li, td, table, tr, th, thead, input, label, select, textarea , button {
 }
 h1 {
 	font-family: "Prata", serif;
-	font-size:60px;
+	font-size:55px;
 	text-align:center;
 	color: #24577B;
 	margin-top:0;
@@ -63,15 +63,13 @@ a:focus, a:hover {
     border: none;
     margin-bottom: 0;
     border-radius: 0;
-    background:transparent;
+    background:#FFF; 
+	padding: 10px 0; 
+	box-shadow: 0px 3px 20px 4px rgba(0, 0, 0, 0.1);
     width: 100%;
-    padding:25px 0;
     height: auto;
     position: fixed;
     z-index: 16;
-	/* -webkit-box-shadow: 0px 6px 11px 0px rgba(0,0,0,0.32);
-	-moz-box-shadow: 0px 6px 11px 0px rgba(0,0,0,0.32);
-	box-shadow: 0px 6px 11px 0px rgba(0,0,0,0.32); */
 }
 .navbar-brand{
 	float: left;
@@ -415,8 +413,8 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
     left:10px;
     z-index: 1;
 }
-.bannrTxtbox h1{color:#FFF; text-align:left; line-height:85px;}
-.bannrTxtbox p{font-weight:400; color:#FFF; font-size:20px; line-height:36px;}
+.bannrTxtbox h1{color:#FFF; text-align:left; line-height:75px;}
+.bannrTxtbox p{font-weight:400; color:#FFF; font-size:18px; line-height:24px; margin-bottom:6px;}
 .exprnc {
   display: inline-flex;
   align-items: center;
@@ -749,7 +747,6 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 .scrolled.innrnavbar{background: rgba(255, 255, 255, .99); padding:10px 0;}
 .scrolled.innrnavbar 
 .scrolled.innrnavbar .navbar-brand{margin-top:14px;}
-.innrnavbar{background:#FFF; padding: 10px 0; box-shadow: 0px 3px 20px 4px rgba(0, 0, 0, 0.1);}
 .innrnavbar #myNavbar ul li a{color:#1A1A1A;}
 .innrnavbar #myNavbar ul li a:hover{color:#C39E4B;}
 .innrnavbar .nav.navbar-nav li.active a{color:#C39E4B !important;}
@@ -1074,7 +1071,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 .pckgbx .incldbx h3{text-align:left; color:#2B200B; font-family: "Manrope", sans-serif; font-weight:500; opacity: 0; transform: translateY(30px); transition: opacity 0.9s ease, transform 0.9s ease;}
 .pckgbx .incldbx h3.animate{opacity: 1; transform: translateY(0px);}
 .enquirybx{background:#FCFAF4; border:1px solid #9D7F52; padding:55px 45px;}
-.enquirybx h1{text-align:left; margin-bottom:40px; font-size:45px; color:#2B200B;}
+.enquirybx h1{text-align:left; margin-bottom:40px; font-size:45px; color:#4D4D4D;}
 .enquirybx .form-box{margin-bottom:40px;}
 .enquirybx .form-box input{
 	background: #FFF;

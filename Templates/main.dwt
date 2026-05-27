@@ -42,7 +42,7 @@
 <!-- TemplateBeginEditable name="EditRegion7" -->
 
 <!-- TemplateEndEditable -->
-<nav class="navbar navbar-inverse visible-lg" id="">
+<nav class="navbar innrnavbar navbar-inverse visible-lg" id="">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -191,7 +191,7 @@
                                 </a>
                             </li>
                         </ul>
-                        <p>Atlas Experience © 2026 All Rights Reserved</p>
+                        <p>Atlas Experiences © 2026 All Rights Reserved</p>
                  	<div class="clearfix"></div>
                 </div>
             </div>
