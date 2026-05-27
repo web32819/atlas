@@ -38,15 +38,15 @@ h4{
 	color: #24577B;
 }
 p{
-	line-height:25px;
+	line-height:24px;
 	color:#FFF;
 	font-weight:400;
     margin: 0;
-	font-size:17px;
+	font-size:15px;
 	margin-bottom:10px;
 	font-family: "Manrope", sans-serif;
 }
-a{color:#1C1D52; font-family: "Manrope", sans-serif; font-size:17px; font-weight:400;}
+a{}
 
 a:focus, a:hover {
 	outline:none;
@@ -1114,7 +1114,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 .philosophybx p{color:#4D4D4D; font-size:24px; line-height:34px; font-weight:600;}
 .philosophybx ul{padding-inline-start:0; column-count:2; margin-top:40px;}
 .philosophybx ul li{list-style-type:none; padding-right: 12px;}
-.philosophybx ul li p{font-size:16px; line-height:30px; font-weight:400;}
+.philosophybx ul li p{font-size:15px; line-height:24px; font-weight:400;}
 .philosophybx ul li img{margin-bottom:10px;}
 .sltnbxwrppr {
     margin-top: 80px;
@@ -1135,7 +1135,6 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 }
 .definsctnbx h4{
 	color:#1A1A1A; 
-	font-size:20px; 
 	font-family: "Manrope", sans-serif; 
 	margin-bottom:20px;
 	opacity: 0;
@@ -1364,6 +1363,9 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 	.innrbnr .bannrTxtbox{top: 190px;}
 	.sctninnr-title{font-size:36px; margin-bottom:40px;}
 	.sctninnr-eyebrow{margin-bottom:8px;}
+	.accordion-body{padding: 0 24px 24px;}
+	.accordion-header{padding:24px 24px 0;}
+	.itin-accordion.open .accordion-body{padding:24px;}
 }
 @media (max-width:414px){}
 @media (max-width:394px){}
