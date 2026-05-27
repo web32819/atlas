@@ -1350,7 +1350,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 @media (max-width:480px){
 	.servicegrid{grid-template-columns: repeat(1, 1fr);}
 	.waybx{grid-template-columns: repeat(1, 1fr);}
-	.bannrTxtbox h1{line-height:60px; font-size:50px;}
+	.bannrTxtbox h1{line-height:52px; font-size:40px;}
 	.bannrTxtbox{top:150px;}
 	.howbegan-grid{grid-template-columns: repeat(1, 1fr);}
 	.definsctnbx {flex: 1 50%;}
