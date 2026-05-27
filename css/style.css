@@ -774,8 +774,10 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
     padding: 0 40px;
 }
 .innrnavbar #myNavbar ul li.cntxt a{color:#C39E4B;}
+.innrbnr{height: auto;}
 .innrbnr .bannrTxtbox{top:390px;}
 .innrbnr .bannrTxtbox .bannrBox h1{text-align:center;}
+.innrbnr .col-md-12{height:auto;}
 .infobar {
     display: flex;
     align-items: center;
@@ -1029,13 +1031,12 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 .incldcrdbx.animate{opacity: 1; transform: translateY(0px);}
 .incldcrdbx img{flex-shrink: 0;}
 .lwrsctn{
-	display:flex;
-	flex-wrap: wrap;
-	align-items: stretch;
-	gap:50px;
-	justify-content: flex-start;
+	display: grid;
+    grid-template-columns: 2fr 4fr;
+    gap: 50px;
+    align-items: start;
 }
-.lwrsctnbx{flex: 1 46%;}
+.lwrsctnbx .follwbx{padding:0;}
 .tchbx{margin-bottom:20px;}
 .tchbx h4{font-family: "Manrope", sans-serif; color:#2B200B; text-align:left; font-size:24px; margin-bottom:20px;}
 .tchbx p{text-align:left;}
@@ -1355,7 +1356,8 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 	.bxsctn{grid-template-columns: 2fr 3fr;}
 	.infobar{padding: 22px 15px;}
 	.rchsctn{grid-template-columns:1fr;}
-	.servicegrid{    grid-template-columns: repeat(2, 1fr);}
+	.servicegrid{grid-template-columns: repeat(2, 1fr);}
+	.innrbnr{margin-top:-50px;}
 }
 @media screen and (max-width:767px){
 	.itin-tab { gap: 0; padding: 12px 7px; flex-wrap: wrap; justify-content: center;}
@@ -1363,6 +1365,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 	.accordion-content{grid-template-columns: 1fr;}
 	.bxsctn{grid-template-columns:1fr;}
 	.bxsctnwrpr h4{padding: 0 0 30px;}
+	.lwrsctn{grid-template-columns: 1fr;}
 }
 @media screen and (max-width:540px){}
 @media screen and (orientation: landscape) and (max-height: 500px) {}
@@ -1383,6 +1386,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 	.accordion-body{padding: 0 24px 24px;}
 	.accordion-header{padding:24px 24px 0;}
 	.itin-accordion.open .accordion-body{padding:24px;}
+	.enquirybx h1{margin-bottom: 20px; font-size: 35px;}
 }
 @media (max-width:414px){}
 @media (max-width:394px){}
