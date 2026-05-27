@@ -421,10 +421,11 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
   gap: 10px;
   background:#C39E4B;
   text-decoration: none;
-  font-size:18px;
+  font-size:16px;
   font-weight:600;
-  padding:20px 27px;
+  padding:15px 27px;
   border-radius:20px;
+  line-height:30px;
   position: relative;
   overflow: hidden;
   color: #FFF;
@@ -1098,7 +1099,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 	border:1px solid #9D7F52;
 }
 .enquirybx .form-box textarea::placeholder{color: #000;}
-.enquirybx .form-box button{margin-top:0; outline:none; border:none; justify-content: center; width:100%;}
+.enquirybx .form-box button{margin-top:0; outline:none; border:none; justify-content: center;}
 .upprbdsctn{padding-top:100px;}
 .philosophysctn{
 	margin-top:90px;
