@@ -1388,6 +1388,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 	.accordion-header{padding:24px 24px 0;}
 	.itin-accordion.open .accordion-body{padding:24px;}
 	.enquirybx h1{margin-bottom: 20px; font-size: 35px;}
+	.banner-overlay{background: radial-gradient(circle 472px at 24% 2%, rgba(255, 153, 0, .8) 0, rgba(0, 0, 0, .6) 100%);}
 }
 @media (max-width:414px){}
 @media (max-width:394px){}
