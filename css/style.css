@@ -668,9 +668,9 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 }
 .card-meta {
     display: flex;
-	flex-wrap: wrap;
-    align-items: center;
-    gap:20px;
+    align-items: flex-start;
+    gap: 20px;
+    flex-direction: column;
 }
 .service-card .imgbx:after {
     content: '';
@@ -1368,7 +1368,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 }
 @media screen and (max-width:767px){
 	.itin-tab { gap: 0; padding: 12px 7px; flex-wrap: wrap; justify-content: center;}
-	.itinerary-tabs{gap:6px; padding:15px 8px;}
+	.itinerary-tabs{ padding:15px 8px; align-items: stretch;}
 	.accordion-content{grid-template-columns: 1fr;}
 	.bxsctn{grid-template-columns:1fr;}
 	.bxsctnwrpr h4{padding: 0 0 30px;}
@@ -1394,9 +1394,10 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 	.accordion-header{padding:24px 24px 0;}
 	.itin-accordion.open .accordion-body{padding:24px;}
 	.enquirybx h1{margin-bottom: 20px; font-size: 35px;}
-	.banner-overlay{background: radial-gradient(circle 872px at 24% 2%, rgba(255, 153, 0, .5) 0, rgba(0, 0, 0, .5) 30%);
+	.card-location:after{right: -19px; border-top: 32px solid transparent;}
+	.banner-overlay{background: radial-gradient(circle 872px at 24% 2%, rgba(255, 153, 0, .5) 0, rgba(0, 0, 0, .5) 30%);}
 }
 @media (max-width:414px){}
 @media (max-width:394px){}
-@media (max-width:375px){}
+@media (max-width:375px){.itinerary-tabs{gap:8px;}}
 @media (max-width:320px){}
