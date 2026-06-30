@@ -766,7 +766,10 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 .scrolled.innrnavbar{background: rgba(255, 255, 255, .99); padding:10px 0;}
 .scrolled.innrnavbar 
 .scrolled.innrnavbar .navbar-brand{margin-top:14px;}
-.innrnavbar #myNavbar ul li a{color:#1A1A1A;}
+.innrnavbar #myNavbar ul li:first-child{padding:0;}
+.innrnavbar #myNavbar ul li a{color:#4D4D4D;}
+.innrnavbar #myNavbar ul li a svg{height:40px; fill:#4D4D4D;}
+.innrnavbar #myNavbar ul li a svg:hover{fill:#C39E4B;}
 .innrnavbar #myNavbar ul li a:hover{color:#C39E4B;}
 .innrnavbar .nav.navbar-nav li.active a{color:#C39E4B !important;}
 .innrnavbar #myNavbar ul li.cntxt {
