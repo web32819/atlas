@@ -722,7 +722,11 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 	display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap:25px;
+	opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
 }
+.waybx.animate{opacity: 1; transform: translateY(0px);}
 .waybxcard{
 	border-radius:20px;
 	border:1px solid rgba(157,127,82,.55);
@@ -766,7 +770,6 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 .scrolled.innrnavbar{background: rgba(255, 255, 255, .99); padding:10px 0;}
 .scrolled.innrnavbar 
 .scrolled.innrnavbar .navbar-brand{margin-top:14px;}
-.innrnavbar #myNavbar ul li:first-child{padding:0;}
 .innrnavbar #myNavbar ul li a{color:#4D4D4D;}
 .innrnavbar #myNavbar ul li a svg{height:32px; fill:#4D4D4D;}
 .innrnavbar #myNavbar ul li a svg:hover{fill:#C39E4B;}
@@ -823,11 +826,11 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 }
 .bxsctn{
 	display: grid;
-    grid-template-columns:3fr 2fr;
+    grid-template-columns:2fr 2fr;
     gap: 35px;
 }
 .bxsctnwrpr h4{
-	padding:60px 0 30px;
+	padding:0;
 	font-size:24px;
 	text-align:left;
 	font-family: "Manrope", sans-serif;
@@ -844,6 +847,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
     transform: translateY(30px);
     transition: opacity 0.9s ease, transform 0.9s ease;
 }
+.bxsctnwrpr img.imgradius{height:100%;}
 .bxsctnwrpr p.animate{opacity: 1; transform: translateY(0px);}
 /* Tabs */
 .itinerary-tabs {
@@ -1139,7 +1143,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 }
 .philosophybx{flex: 1 46%;}
 .philosophybx h2{text-align:left; color:#4D4D4D; margin-bottom:30px;}
-.philosophybx p{color:#4D4D4D; font-size:24px; line-height:34px; font-weight:600;}
+.philosophybx p{color:#4D4D4D; font-size:18px; line-height:29px; font-weight:600;}
 .philosophybx ul{padding-inline-start:0; column-count:2; margin-top:40px;}
 .philosophybx ul li{list-style-type:none; padding-right: 12px;}
 .philosophybx ul li p{font-size:15px; line-height:24px; font-weight:400;}
