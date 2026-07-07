@@ -1586,6 +1586,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 	.ntincldcntnr{grid-template-columns: repeat(1, 1fr); gap:0;}
 	.newinfobar{grid-template-columns:1fr;}
 	.newinfobar.sectionbx{padding: 50px 30px;}
+	.itin-timeline{display:none	;}
 }
 @media (max-width:414px){}
 @media (max-width:394px){}
