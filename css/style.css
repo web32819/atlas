@@ -1397,7 +1397,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
     transition: opacity 0.9s ease, transform 0.9s ease;
 }
 .privacy-section ul li.animate{opacity: 1; transform: translateY(0px);}
-.nwincldsctnbx{background:#FCFAF4;}
+.nwincldsctnbx{background:#FCFAF4; padding-bottom:176px;}
 .nwincldsctnbx h1{color:#4D4D4D; margin-bottom:0;}
 .nwincldsctnbx .sctninnr-eyebrow{ text-transform:capitalize; letter-spacing:0;}
 .nwincldsctnbx .sctninnr-eyebrow .line{width: 410px;}
@@ -1453,7 +1453,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
     flex-wrap: wrap;
     align-items: center;
     gap: 10px;
-	margin-top:30px;
+	margin:30px 0;
 }
 .ntincldsctn h1{text-align:left; padding:0;}
 .ntincldcntnr{
@@ -1464,11 +1464,11 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 	align-items:stretch;
 }
 .ntincldcntnr p{color:#4D4D4D;}
-.newinfobar.sectionbx{ padding:50px 60px;}
+.newinfobar.sectionbx{ padding:50px 60px; margin-top:-120px;}
 .newinfobar{
 	display:grid;
-	grid-template-columns: 1.5fr 1.5fr;
-	gap:40px;
+	grid-template-columns:2fr 1.5fr;
+	gap:100px;
 	align-items:flex-start;
 }
 .newinfobar h3{color:#FFF; text-align:left; font-size:30px;}
@@ -1478,9 +1478,10 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 .infobarsctn .follwbx ul li .flw-sub{color:#FFF;}
 .infobarsctn .follwbx ul li a{padding:0; margin-bottom:15px;}
 .infobarsctn .follwbx ul li a:hover{background:transparent;}
+.lwrsctnbx h1{text-align:left; color:#4D4D4D;}
 .lwrsctnbx .accordion {
-    border: 1px solid #e8c9b3;
-    border-radius: 14px;
+    border: 1px solid #9D7F52;
+    border-radius: 15px;
     margin-bottom: 14px;
     overflow: hidden;
     transition: border-color 0.2s ease;
@@ -1488,7 +1489,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 .lwrsctnbx .accordion-header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between;	
     padding: 20px 22px;
     cursor: pointer;
     font-size: 17px;
