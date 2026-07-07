@@ -1480,6 +1480,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 	align-items:flex-start;
 }
 .newinfobar h3{color:#FFF; text-align:left; font-size:30px;}
+.newinfobar .infobarsctn hr{border-top:1px solid rgba(255,255,255,.30);}
 .infobarsctn .follwbx{padding:0;}
 .infobarsctn .follwbx ul li {background:transparent;}
 .infobarsctn .follwbx ul li .flw-title{color:#FFF;}
