@@ -549,7 +549,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 }
 .exprncsctn h1.animate{ opacity: 1; transform: translateY(0px);}
 .exprncsctn p{
-	transition: opacity 0.9s ease, transform 0.9s ease;
+	/* transition: opacity 0.9s ease, transform 0.9s ease; */
     opacity: 0;
     transform: translateY(30px);
 }
@@ -1006,12 +1006,12 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
     display: grid;
     grid-template-rows: 0fr;
     overflow: hidden;
-    transition: grid-template-rows 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    /* transition: grid-template-rows 0.5s cubic-bezier(0.4, 0, 0.2, 1); */
 	padding: 0 28px 40px; /* add horizontal padding */
 }
 .accordion-body > div {overflow: hidden;}
-.itin-accordion.open .accordion-header{background:#FFF;}
-.itin-accordion.open .accordion-body { grid-template-rows: 1fr; padding: 47px 60px 40px; background:#FFF;/* padding when open */}
+.itin-accordion.open .accordion-header{background:#FFF; padding: 47px 60px 40px;}
+.itin-accordion.open .accordion-body { grid-template-rows: 1fr; /* padding: 47px 60px 40px; */ background:#FFF;/* padding when open */}
 .itin-accordion.open .chevron {transform: rotate(180deg);}
 .accordion-content {
     display: grid;
@@ -1034,7 +1034,11 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
     font-size: 16px;
     color: #4D4D4D;
     line-height:24px;
+	opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
 }
+.itin-list li.animate{opacity: 1; transform: translateY(0px);}
 .itin-list li svg {flex-shrink: 0; margin-top:3px;}
 /* Image */
 .accordion-img {border-radius:20px; overflow: hidden;}
@@ -1470,8 +1474,22 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 	align-items:stretch;
 }
 .ntincldcntnr ul{padding-inline-start:25px;}
-.ntincldcntnr ul li{font-size:16px; color: #4D4D4D; padding: 5px 0;}
-.ntincldcntnr p{color:#4D4D4D;}
+.ntincldcntnr ul li{
+	font-size:16px; 
+	color: #4D4D4D; 
+	padding: 5px 0;
+	opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+.ntincldcntnr ul li.animate{opacity: 1; transform: translateY(0px);}
+.ntincldcntnr p{
+	color:#4D4D4D;
+	opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+.ntincldcntnr p.animate{opacity: 1; transform: translateY(0px);}
 .newinfobar.sectionbx{ padding:50px 60px; margin-top:-120px;}
 .newinfobar{
 	display:grid;
