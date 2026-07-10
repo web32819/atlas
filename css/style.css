@@ -1006,6 +1006,8 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
     display: grid;
     grid-template-rows: 0fr;
     overflow: hidden;
+	transition: grid-template-rows 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+                padding 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     /* transition: grid-template-rows 0.5s cubic-bezier(0.4, 0, 0.2, 1); */
 	padding: 0 28px 40px; /* add horizontal padding */
 }
@@ -1559,7 +1561,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 	.bannrTxtbox{left:0;}
 	.waybx{grid-template-columns: repeat(2, 1fr);}
 	.card-content{padding: 30px;}
-	.philosophybx ul{column-count: 1;}
+	.philosophybx ul{column-count:2;}
 	.definsctnbx{ flex: 1 46%;}
 	.itin-tab{gap: 10px;}
 	.incldcrd{grid-template-columns: repeat(2, 1fr);}
@@ -1606,6 +1608,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 	.newinfobar.sectionbx{padding: 50px 30px;}
 	.itin-timeline{display:none	;}
 	.lwrsctnbx h1{text-align:center; font-size:35px;}
+	.philosophybx ul{column-count:1;}
 }
 @media (max-width:414px){}
 @media (max-width:394px){}
