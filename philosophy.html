@@ -433,6 +433,31 @@ document.querySelectorAll('.nav.navbar-nav li a').forEach(function(link) {
     }
 });
 </script>
+<script>
+	(async function () {
+  // Step 1: Get user's country/currency from IP
+  const geoRes = await fetch('https://ipapi.co/json/');
+  const geoData = await geoRes.json();
+  const currency = geoData.currency;
+
+  // Step 2: Apply pre-fed absolute prices, no FX calculation
+  document.querySelectorAll('.meta-value[data-prices]').forEach(el => {
+    let prices;
+    try {
+      prices = JSON.parse(el.dataset.prices);
+    } catch (e) {
+      return; // skip malformed data
+    }
+
+    const val = prices[currency] ?? prices.USD; // fallback to USD if currency not listed
+    const displayCurrency = prices[currency] !== undefined ? currency : 'USD';
+
+    el.textContent = new Intl.NumberFormat('en', {
+      style: 'currency', currency: displayCurrency, maximumFractionDigits: 0
+    }).format(val);
+  });
+})();
+</script>
 
 <!-- InstanceBeginEditable name="EditRegion6" -->
 

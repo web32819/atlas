@@ -204,7 +204,7 @@
 									</svg>
 									<div>
 										<span class="meta-label">FROM</span>
-										<span class="meta-value" data-usd="1849">$1,849</span>
+										<span class="meta-value" data-prices='{"USD":1849,"GBP":1399,"INR":170000}'>100</span>
 									</div>
 								</div>
 								<!-- <div class="meta-divider"></div> -->
@@ -243,7 +243,7 @@
 									</svg>
 									<div>
 										<span class="meta-label">FROM</span>
-										<span class="meta-value" data-usd="1499">£1,499</span>
+										<span class="meta-value" data-prices='{"USD":1999,"GBP":1499,"INR":190000}'>100</span>
 									</div>
 								</div>
 								<!-- <div class="meta-divider"></div> -->
@@ -282,7 +282,7 @@
 									</svg>
 									<div>
 										<span class="meta-label">FROM</span>
-										<span class="meta-value" data-usd="1649">$1,649</span>
+										<span class="meta-value" data-prices='{"USD":1649,"GBP":1249,"INR":160000}'>100</span>
 									</div>
 								</div>
 								<!-- <div class="meta-divider"></div> -->
@@ -321,7 +321,7 @@
 									</svg>
 									<div>
 										<span class="meta-label">FROM</span>
-										<span class="meta-value" data-usd="2499">$2,499</span>
+										<span class="meta-value" data-prices='{"USD":2499,"GBP":1899,"INR":230000}'>100</span>
 									</div>
 								</div>
 								<!-- <div class="meta-divider"></div> -->
@@ -360,7 +360,7 @@
 									</svg>
 									<div>
 										<span class="meta-label">FROM</span>
-										<span class="meta-value" data-usd="1549">$1,549</span>
+										<span class="meta-value" data-prices='{"USD":1549,"GBP":1149,"INR":140000}'>100</span>
 									</div>
 								</div>
 								<!-- <div class="meta-divider"></div> -->
@@ -513,30 +513,34 @@ document.querySelectorAll('.nav.navbar-nav li a').forEach(function(link) {
     }
 });
 </script>
-
-<!-- InstanceBeginEditable name="EditRegion6" -->
-<script type="text/javascript">
+<script>
 	(async function () {
   // Step 1: Get user's country/currency from IP
   const geoRes = await fetch('https://ipapi.co/json/');
   const geoData = await geoRes.json();
   const currency = geoData.currency;
 
-  // Step 2: Get exchange rate
-  const fxRes = await fetch(`https://api.exchangerate-api.com/v4/latest/USD`);
-  const fxData = await fxRes.json();
-  const rate = fxData.rates[currency] || 1;
+  // Step 2: Apply pre-fed absolute prices, no FX calculation
+  document.querySelectorAll('.meta-value[data-prices]').forEach(el => {
+    let prices;
+    try {
+      prices = JSON.parse(el.dataset.prices);
+    } catch (e) {
+      return; // skip malformed data
+    }
 
-  // Step 3: Convert all prices dynamically from data-usd
-  document.querySelectorAll('.meta-value[data-usd]').forEach(el => {
-    const usd = parseFloat(el.dataset.usd);
-    const val = Math.round(usd * rate);
+    const val = prices[currency] ?? prices.USD; // fallback to USD if currency not listed
+    const displayCurrency = prices[currency] !== undefined ? currency : 'USD';
+
     el.textContent = new Intl.NumberFormat('en', {
-      style: 'currency', currency, maximumFractionDigits: 0
+      style: 'currency', currency: displayCurrency, maximumFractionDigits: 0
     }).format(val);
   });
 })();
 </script>
+
+<!-- InstanceBeginEditable name="EditRegion6" -->
+
 
 <script type="text/javascript">
 const observer = new IntersectionObserver((entries) => {
