@@ -228,7 +228,7 @@
 						</svg>
 						<div>
 							<span class="info-label">FROM</span>
-							<span class="info-value meta-value" data-usd="1499">£1,499</span>
+							<span class="info-value meta-value" data-prices='{"USD":1999,"GBP":1499,"INR":190000}'>100</span>
 						</div>
 					</div>
 				</div>
@@ -922,28 +922,7 @@ document.querySelectorAll('.nav.navbar-nav li a').forEach(function(link) {
 </script>
 
 <!-- InstanceBeginEditable name="EditRegion6" -->
-<script type="text/javascript">
-	(async function () {
-  // Step 1: Get user's country/currency from IP
-  const geoRes = await fetch('https://ipapi.co/json/');
-  const geoData = await geoRes.json();
-  const currency = geoData.currency;
 
-  // Step 2: Get exchange rate
-  const fxRes = await fetch(`https://api.exchangerate-api.com/v4/latest/USD`);
-  const fxData = await fxRes.json();
-  const rate = fxData.rates[currency] || 1;
-
-  // Step 3: Convert all prices dynamically from data-usd
-  document.querySelectorAll('.meta-value[data-usd]').forEach(el => {
-    const usd = parseFloat(el.dataset.usd);
-    const val = Math.round(usd * rate);
-    el.textContent = new Intl.NumberFormat('en', {
-      style: 'currency', currency, maximumFractionDigits: 0
-    }).format(val);
-  });
-})();
-</script>
 
 <script type="text/javascript">
 const observer = new IntersectionObserver((entries) => {
