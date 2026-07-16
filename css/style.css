@@ -475,7 +475,8 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 .exprnc:hover svg {transform: translateX(6px);}
 .exprnctnr{padding-top:150px;}
 .exprncsctn{background:#FCFAF4;}
-.exprncsctn a{}
+.exprncsctn a.exprnc{margin: 55px auto 0; display: table;}
+.exprncsctn a.exprnc svg{left:5px; top:1px;}
 .sctninnr{
 	position: relative;
     z-index: 2;
