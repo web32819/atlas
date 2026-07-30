@@ -695,7 +695,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
     background: #e0e0e0;
 }
 .waysctn{background:#FFF;}
-.waysctn p{ color:#4D4D4D; text-align:left;}
+.waysctn p{ color:#4D4D4D; text-align:center;}
 .waybx{
 	margin-top:60px;
 	display: grid;
